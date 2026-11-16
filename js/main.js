@@ -31,8 +31,12 @@
         { time: "4.00 p.m.", items: ["Once the tour has been completed, parents are free to visit the PSSG/Alumni booths in the Shaw Hall"] }
       ],
       note: "Please leave the school compound with your child via the Main Gate.",
-      slides: " {   title: "P1 Orientation Slides",   text: "View the slides from our P1 Orientation session.",   file: DOCS + "p1-orientation-slides.pdf",   name: "P1 Orientation Slides.pdf",   open: "View slides (PDF, opens in a new tab)" }"
-    },
+      slides: {  title: "P1 Orientation Slides",
+        text: "View the slides from our P1 Orientation session.",
+        file: DOCS + encodeURIComponent("P1 Orientation _Principal & Year Head Sharing_11 Nov.pdf"),
+        name: "P1 Orientation _Principal & Year Head Sharing_11 Nov.pdf",
+        open: "View slides (PDF, opens in a new tab)"
+},
     storybooks: [
       { title: "I'm A Joyful PL-Lite", text: "A read-together social story about starting Primary One. Meet Tina as she gets ready for a new school, makes friends and tries new things.", file: DOCS + "joyful-pl-lite.pdf", name: "I'm A Joyful PL-Lite - A Social Story for P1 Transition.pdf", cover: IMG + "storybook-cover.jpg" }
     ],
@@ -86,7 +90,7 @@
         }).join("") + '</ol>' +
         note(o.note) +
         '<h3 style="margin-top:12px">Orientation slides</h3>' +
-        '<article class="card"><p style="color:var(--ink);font-weight:600">' + esc(o.slides) + '</p></article>';
+        docCard(o.slides);
     }
     return '<h2>Notes for P1 Parents</h2><p class="lead">What to know before and during your daughter\'s first year.</p>' + docCard(DATA.notesDoc);
   }
