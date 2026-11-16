@@ -31,7 +31,7 @@
         { time: "4.00 p.m.", items: ["Once the tour has been completed, parents are free to visit the PSSG/Alumni booths in the Shaw Hall"] }
       ],
       note: "Please leave the school compound with your child via the Main Gate.",
-      slides: "Orientation Slides used will be shared here on 13 Nov."
+      slides: " {   title: "P1 Orientation Slides",   text: "View the slides from our P1 Orientation session.",   file: DOCS + "p1-orientation-slides.pdf",   name: "P1 Orientation Slides.pdf",   open: "View slides (PDF, opens in a new tab)" }"
     },
     storybooks: [
       { title: "I'm A Joyful PL-Lite", text: "A read-together social story about starting Primary One. Meet Tina as she gets ready for a new school, makes friends and tries new things.", file: DOCS + "joyful-pl-lite.pdf", name: "I'm A Joyful PL-Lite - A Social Story for P1 Transition.pdf", cover: IMG + "storybook-cover.jpg" }
